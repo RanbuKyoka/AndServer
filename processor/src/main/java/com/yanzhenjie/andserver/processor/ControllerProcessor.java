@@ -56,6 +56,7 @@ import com.yanzhenjie.andserver.processor.mapping.Post;
 import com.yanzhenjie.andserver.processor.mapping.Put;
 import com.yanzhenjie.andserver.processor.util.Constants;
 import com.yanzhenjie.andserver.processor.util.Logger;
+import com.yanzhenjie.andserver.processor.util.MimeType;
 import com.yanzhenjie.andserver.processor.util.Patterns;
 
 import org.apache.commons.collections4.CollectionUtils;
@@ -63,6 +64,7 @@ import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
 
+import java.awt.datatransfer.MimeTypeParseException;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -77,8 +79,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.regex.Pattern;
 
-import javax.activation.MimeType;
-import javax.activation.MimeTypeParseException;
 import javax.annotation.processing.Filer;
 import javax.annotation.processing.ProcessingEnvironment;
 import javax.annotation.processing.RoundEnvironment;
